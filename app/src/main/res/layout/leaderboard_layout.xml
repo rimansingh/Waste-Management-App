@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/userPoints"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"
+        android:background="@drawable/leaderboard_background">
+
+        <TextView
+            android:id="@+id/leaderBoardRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/andika"
+            android:text="1st"
+            android:textColor="@color/black1"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/leaderBoardUserImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_user_icon"
+            app:civ_border_color="@color/dark_blue"
+            app:civ_border_overlay="false"
+            app:civ_border_width="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/userImage"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/leaderBoardFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dp"
+                android:fontFamily="@font/andika"
+                android:text="Rimandeep"
+                android:textColor="@color/black1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/leaderBoardLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/andika"
+                android:text="Singh"
+                android:textColor="@color/black1"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginTop="-5dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/leaderBoardPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/andika"
+                android:text="3000"
+                android:textColor="@color/black1"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="donkey_brown">#A7907F</color>
+    <color name="pastel_grey">#D7CABD</color>
+
+    //Background color
+    <color name="background">#F8F8F7</color>
+
+    //Text color
+    <color name="lightGrey">#F1F1F1</color>
+    <color name="grey">#D3D0DA</color>
+    <color name="grey1">#B5B3BE</color>
+    <color name="grey2">#89818D</color>
+    <color name="grey3">#5B5A62</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black1">#04121A</color>
+    <color name="cherry">#F55951</color>
+    <color name="green">#5BA33D</color>
+
+    //Toolbar color
+    <color name="dark_blue">#1F4E7C</color>
+    <color name="light_blue">#7A9BBA</color>
+
+    //Button color
+    <color name="strong_orange">#D28F1B</color>
+
+    //Extra color
+    <color name="new_color2">#77685D</color>
+
+    <color name="new_color4">#EDD2CB</color>
+    <color name="new_color5">#F1F1F1</color>
+    <color name="new_color6">#058ED9</color>
+</resources>

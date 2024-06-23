@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeScreen.Feedback"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/aapBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <LinearLayout
+                    android:id="@+id/buttonBack"
+                    android:layout_width="40dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back_arrow"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/andika"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Toolbar.TitleText" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/aapBar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Rate Your Experience"
+            android:textColor="@color/black1"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Are you satisfied with the service?"
+            android:textColor="@color/grey1"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/feedback_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/feedback_edittext_box"
+                android:hint="Email"
+                android:textColor="@color/black1"
+                android:textColorHint="@color/grey1"
+                android:paddingHorizontal="15dp"/>
+
+            <EditText
+                android:id="@+id/feedback_message"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/feedback_email"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/feedback_edittext_box"
+                android:gravity="top"
+                android:hint="Your message"
+                android:textColor="@color/black1"
+                android:textColorHint="@color/grey1"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/feedback_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:background="@drawable/phone_auth_button_enable"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/borderlessButtonStyle" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

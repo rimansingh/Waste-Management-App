@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivities.OtpVerification"
+    android:background="@color/dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/starting_activity_card_view">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/andika"
+            android:gravity="center"
+            android:text="Verification code"
+            android:textColor="@color/black1"
+            android:textSize="25dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/grey3"/>
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otpBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black1"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:height="42dp"
+            app:width="42dp"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:bar_active_color="@color/black1"
+            app:length="6"
+            app:otp_text_size="24dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Didn't receive a code?"
+            android:textColor="@color/grey3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/buttonResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend code"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/grey1"
+            android:layout_marginBottom="0dp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:indeterminateTint="@color/dark_blue"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginBottom="8dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonContinue"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:layout_gravity="right"
+                style="?android:attr/borderlessButtonStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

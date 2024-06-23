@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeScreen.rewards.QuizResultActivity"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/result_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/trophy_icon"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:textColor="@color/grey1"/>
+
+    <TextView
+        android:id="@+id/correctAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/10"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:textColor="@color/grey1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earning Points"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:textSize="18dp"
+        android:textColor="@color/grey1"/>
+
+    <TextView
+        android:id="@+id/earnedPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="320"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:textColor="@color/grey1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mathematicsAnswers"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonContinue"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/quiz_button"
+            android:padding="15dp"
+            android:text="Take New Quiz"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonQuit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Share Result"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:textColor="@color/black1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/share_button"
+            android:padding="15dp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

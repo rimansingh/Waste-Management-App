@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeScreen.WasteReductionTips"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/aapBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <LinearLayout
+                    android:id="@+id/buttonBack"
+                    android:layout_width="40dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/back_arrow"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Waste Reduction Tips"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/andika"
+                    android:layout_centerInParent="true"
+                    android:textAppearance="@style/Toolbar.TitleText" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="5dp"
+        android:layout_below="@id/aapBar">
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_period="2000"
+            app:iss_auto_cycle="true"
+            app:iss_delay="3000"
+            app:iss_corner_radius="20"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardView"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black1"
+            android:fontFamily="@font/andika"
+            android:text="1. Reuse and recycle in order to reduce waste. The 3 R's are important to follow: reduce, reuse, and recycle.
+\n2. Reusable shopping bags, coffee cups, and water bottles are essential items for sustainable living.
+\n3. Go for items crafted from recycled materials or those with less packaging.
+\n4. Reducing packaging waste can be achieved by purchasing items in bulk.
+\n5. Organic waste should be composted.
+\n6. Instead of wasting paper, consider using reusable cloth towels or napkins.
+\n7. Throwing things away shouldn't be your go-to solution; fix them up instead.
+\n8. Longing for a solution to clutter? Start by parting with things you no longer require through donation or sale.
+\n9. When feasible, select digital options.
+\n10. Vintage or second-hand items are worth considering.
+\n11. Lasting products are essential, so choose durable ones.
+\n12. Properly disposing of hazardous waste is a must.
+\n13. Reduction and awareness of waste are important topics to share with others. It's vital to spread information about ways to lessen waste and be more environmentally friendly. Sharing tips on reducing waste can be impactful and inspiring for others, and there are many creative and unique ways to do so."
+            />
+
+    </ScrollView>
+
+</RelativeLayout>

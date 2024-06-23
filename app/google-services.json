@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1019049603262",
+    "project_id": "waste-equalizer",
+    "storage_bucket": "waste-equalizer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019049603262:android:8780ed652859234562aeef",
+        "android_client_info": {
+          "package_name": "com.example.projecta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019049603262-c9p2olltg50itjgqiak10egpbtf349lo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projecta",
+            "certificate_hash": "8e28e2efe81f7bd0f854756adf28df93ed413019"
+          }
+        },
+        {
+          "client_id": "1019049603262-57cpvk4docpvc2g2fhj0ocsrvolv208m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-BcZBRyemCJK94kSE56OrrYTDFz6xDkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019049603262-57cpvk4docpvc2g2fhj0ocsrvolv208m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

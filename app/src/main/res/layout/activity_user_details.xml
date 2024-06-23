@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivities.UserDetails"
+    android:orientation="vertical"
+    android:background="@color/dark_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/starting_activity_card_view">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="Your Detail"
+            android:textAlignment="center"
+            android:textColor="@color/black1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/user_detail_choose_image" />
+
+            <ImageView
+                android:id="@+id/userImageCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_detail_camera"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fullName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:weightSum="2">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/firstName"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textCursorDrawable="@color/black1"
+                android:textSize="16dp"
+                app:met_underlineColor="@color/grey"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/dark_blue"
+                app:met_textColor="@color/black1"
+                app:met_textColorHint="@color/grey1"
+                android:layout_marginRight="7dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/lastName"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textCursorDrawable="@color/black1"
+                android:textSize="16dp"
+                app:met_underlineColor="@color/grey"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/dark_blue"
+                app:met_textColor="@color/black1"
+                app:met_textColorHint="@color/grey1"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/userPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textCursorDrawable="@color/black1"
+            android:textSize="16dp"
+            app:met_underlineColor="@color/grey"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/black1"
+            app:met_textColor="@color/black1"
+            app:met_textColorHint="@color/grey1"
+            android:layout_marginTop="15dp"
+            android:enabled="false"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/grey"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_detail_button"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:layout_gravity="right"
+                android:textColor="@color/white"
+                android:layout_marginBottom="2dp"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

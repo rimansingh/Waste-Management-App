@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projecta">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectA"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".fragments.leaderboard.LeaderboardActivity"
+            android:exported="false"
+            android:theme="@style/MainActivity"/>
+        <activity
+            android:name=".homeScreen.complaints.ComplaintFile"
+            android:exported="false"
+            android:theme="@style/MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_apiKey" />
+
+        <activity
+            android:name=".homeScreen.rewards.QuizResultActivity"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.rewards.WasteQuestionsActivity"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.Feedback"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.Complaints"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.Reward"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.WasteReductionTips"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".homeScreen.WasteBinLocator"
+            android:exported="false"
+            android:theme="@style/MainActivity" />
+        <activity
+            android:name=".userProfile.AccountDetailsActivity"
+            android:exported="false"
+            android:theme="@style/StartingActivity" />
+        <activity
+            android:name=".loginActivities.UserDetails"
+            android:theme="@style/StartingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".loginActivities.OtpVerification"
+            android:theme="@style/StartingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".loginActivities.PhoneAuth"
+            android:theme="@style/StartingActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".loginActivities.SplashScreen"
+            android:exported="true"
+            android:theme="@style/StartingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
